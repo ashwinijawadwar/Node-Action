@@ -1,10 +1,7 @@
 const request = require('supertest');
-const express = require('express');
+const app = require('../index.js'); // Adjust this if needed
 
-const app = express();
-app.get('/', (req, res) => res.send('Hello, GitHub Actions.!'));
-
-test('GET / should return Hello, GitHub Actions.!', async () => {
+test('Basic test', async () => {
     const res = await request(app).get('/');
-    expect(res.text).toBe('Hello, GitHub Actions.!');
+    expect(res.statusCode).toBe(200);
 });
