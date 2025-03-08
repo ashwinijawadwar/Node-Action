@@ -4,6 +4,5 @@ const app = express();
 app.get('/', (req, res) => {
     res.status(200).send('Hello, World!');
 });
-app.listen(process.env.PORT || 3000);
 
 module.exports = app; // Ensure this is present
