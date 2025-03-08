@@ -2,7 +2,7 @@
   "name": "your-project",
   "version": "1.0.0",
   "scripts": {
-    "test": "jest"
+    "test": "your-test-command"
   },
   "dependencies": {
     "jest": "^29.0.0"
