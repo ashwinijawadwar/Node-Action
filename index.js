@@ -5,7 +5,7 @@ app.get('/', (req, res) => {
     res.status(200).send(`
         <html>
             <head>
-                <title>Cool Hello World</title>
+                <title>Cool Welcome to Ashwini's Website!</title>
                 <style>
                     body {
                         font-family: Arial, sans-serif;
@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
             </head>
             <body>
                 <h1> Hello, World! </h1>
-                <p>Welcome !! <b>Ashwini</b> </p>
+                <p> <b>Passionate about DevOps and Network Administration. Striving to build scalable and efficient systems. 🚀</b> </p>
             </body>
         </html>
     `);
