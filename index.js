@@ -22,17 +22,18 @@ app.get('/', (req, res) => {
             </head>
             <body>
                 <h1> Hello, World! </h1>
-                <p>Much love to you from <b>Ashwini</b> </p>
+                <p>Much love to you from <b>Prasad</b> </p>
             </body>
         </html>
     `);
 });
 
+const PORT = 3000;
+
 if (require.main === module) {
-    const PORT = 3000;
     app.listen(PORT, () => {
-        console.log(` Server is running on http://localhost:${PORT}`);
+        console.log(`Server is running on http://localhost:${PORT}`);
     });
 }
 
-module.exports = app;
+module.exports = app; // Ensure this is present for testing or module imports
